@@ -1,0 +1,70 @@
+@import "./variable";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// site main css
+@import "./site.scss";
+
+
+.modal {
+    .modal-dialog {
+      width: 100%;
+      max-width: 800px;
+      .modal-content {
+        width: 100%;
+        background-color: transparent!important;
+        border: 0;
+        border-radius: 0;
+        
+      }
+    }
+    .modal-header {
+      border: 0;
+      position: relative;
+      .btn-close {
+        margin: 0;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 28px;
+        height: 28px;
+        border: 0;
+        border-radius: 50%;
+        background-color:$white;
+        font-size: 14px;
+        opacity: 1 !important;
+        z-index: 10;
+      }
+    }
+  }
+
+//   media query
+
+@media (max-width: 991px){
+    .modal {
+        .modal-header {
+          .btn-close {
+            right: 8px;
+            width: 23px;
+            height: 23px;
+            font-size: 11px;
+          }
+        }
+      }
+}
+
+
+@media (max-width: 575px) {
+
+.modal {
+    .modal-header {
+      .btn-close {
+        right: 12px;
+        width: 19px;
+        height: 19px;
+        font-size: 9px;
+      }
+    }
+  }
+}
